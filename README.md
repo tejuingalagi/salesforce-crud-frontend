@@ -1,16 +1,76 @@
-# React + Vite
+# Salesforce CRUD Application — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application for managing Salesforce records through a Spring Boot backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Salesforce OAuth login integration
+- Dashboard to select and view Salesforce objects
+- Display records retrieved from Salesforce
+- Create Salesforce Account records
+- React frontend integrated with the backend using Axios
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- Axios
+- CSS
+- Salesforce REST API integration through Spring Boot
 
-## Expanding the ESLint configuration
+## Supported Salesforce Objects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Account
+- Opportunity
+- Lead
+- Contact
+- Case
+
+## Prerequisites
+
+- Node.js and npm
+- The Salesforce CRUD Spring Boot backend
+- A configured Salesforce account and OAuth application
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tejuingalagi/salesforce-crud-frontend.git
+cd salesforce-crud-frontend
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the frontend
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal, usually `http://localhost:5173`.
+
+## Backend Configuration
+
+The frontend communicates with the Spring Boot backend at `http://localhost:8080` during local development.
+
+Start the backend separately and configure Salesforce OAuth credentials using the backend's configuration.
+
+## Project Status
+
+The dashboard, Salesforce login integration, record retrieval, and Account creation have been tested. Additional CRUD operations, pagination, and deployment are in progress.
+
+## Repositories
+
+- **Frontend:** https://github.com/tejuingalagi/salesforce-crud-frontend
+- **Backend:** https://github.com/tejuingalagi/salesforce-crud
+
+---
+
+Developed as a Salesforce CRUD application project.
